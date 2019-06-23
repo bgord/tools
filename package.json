@@ -6,7 +6,8 @@
 	"typings": "dist/index.d.ts",
 	"files": [
 		"dist",
-		"configs"
+		"configs",
+		"scripts"
 	],
 	"scripts": {
 		"start": "tsdx watch",
