@@ -13,7 +13,8 @@
 		"pre-build": "rimraf dist",
 		"build": "cross-env NODE_ENV=production tsdx build",
 		"test": "tsdx test --env=jsdom",
-		"prepare": "cross-env NODE_ENV=production tsdx build"
+		"prepare": "cross-env NODE_ENV=production tsdx build",
+		"lint": "eslint src/ --ext .ts,.tsx,.js,.jsx --ignore-pattern node_modules"
 	},
 	"peerDependencies": {
 		"react": ">=16"
@@ -22,7 +23,19 @@
 		"@types/jest": "^24.0.15",
 		"@types/react": "^16.8.22",
 		"@types/react-dom": "^16.8.4",
+		"@typescript-eslint/eslint-plugin": "^1.10.2",
+		"@typescript-eslint/parser": "^1.10.2",
 		"cross-env": "^5.2.0",
+		"eslint": "^5.16.0",
+		"eslint-config-bgord": "^2.0.1",
+		"eslint-config-prettier": "^5.0.0",
+		"eslint-plugin-jest": "^22.7.1",
+		"eslint-plugin-jsx-a11y": "^6.2.1",
+		"eslint-plugin-prettier": "^3.1.0",
+		"eslint-plugin-ramda": "^2.5.1",
+		"eslint-plugin-react": "^7.13.0",
+		"eslint-plugin-react-hooks": "^1.6.0",
+		"eslint-plugin-sonarjs": "^0.4.0",
 		"husky": "^2.4.1",
 		"prettier": "^1.18.2",
 		"pretty-quick": "^1.11.1",
@@ -37,5 +50,8 @@
 		"@testing-library/react": "^8.0.1",
 		"jest-dom": "^3.5.0"
 	},
-	"prettier": "./configs/prettier.js"
+	"prettier": "./configs/prettier.js",
+	"eslintConfig": {
+		"extends": "bgord"
+	}
 }
