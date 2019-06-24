@@ -55,7 +55,10 @@
 	"dependencies": {},
 	"prettier": "./configs/prettier.js",
 	"eslintConfig": {
-		"extends": "bgord"
+		"extends": "bgord",
+		"rules": {
+			"no-implicit-coercion": 0
+		}
 	},
 	"jest": {
 		"globals": {
