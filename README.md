@@ -1,5 +1,7 @@
 # bgord-tools
 
+[![Build Status](https://travis-ci.org/bgord/tools.svg?branch=master)](https://travis-ci.org/bgord/tools)
+
 A toolbox for writing React applications.
 
 ---
