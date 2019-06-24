@@ -20,6 +20,8 @@
 		"react": ">=16"
 	},
 	"devDependencies": {
+		"@testing-library/react": "^8.0.1",
+		"@testing-library/react-hooks": "^1.0.4",
 		"@types/jest": "^24.0.15",
 		"@types/react": "^16.8.22",
 		"@types/react-dom": "^16.8.4",
@@ -37,21 +39,27 @@
 		"eslint-plugin-react-hooks": "^1.6.0",
 		"eslint-plugin-sonarjs": "^0.4.0",
 		"husky": "^2.4.1",
+		"jest-dom": "^3.5.0",
 		"prettier": "^1.18.2",
 		"pretty-quick": "^1.11.1",
 		"react": "^16.8.6",
 		"react-dom": "^16.8.6",
+		"react-test-renderer": "^16.8.6",
 		"rimraf": "^2.6.3",
 		"tsdx": "^0.7.2",
 		"tslib": "^1.10.0",
 		"typescript": "^3.5.2"
 	},
-	"dependencies": {
-		"@testing-library/react": "^8.0.1",
-		"jest-dom": "^3.5.0"
-	},
+	"dependencies": {},
 	"prettier": "./configs/prettier.js",
 	"eslintConfig": {
 		"extends": "bgord"
+	},
+	"jest": {
+		"globals": {
+			"ts-jest": {
+				"diagnostics": false
+			}
+		}
 	}
 }

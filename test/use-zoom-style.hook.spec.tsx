@@ -1,6 +1,6 @@
-import {renderHook, act} from "react-hooks-testing-library";
+import {renderHook, act} from "@testing-library/react-hooks";
 
-import {useImageZoomStyle} from "./use-zoom-style.hook";
+import {useImageZoomStyle} from "../src/use-zoom-style.hook";
 
 describe("use-zoom-style.hook", () => {
 	it("returns default minZoomLevel transform", () => {
